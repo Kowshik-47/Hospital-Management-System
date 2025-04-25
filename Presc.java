@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package hospitalmanagementsystem;
 
 
@@ -15,17 +11,11 @@ import java.time.LocalDate;
 import java.util.Random;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Gopisaran
- */
 public class Presc extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Prescription
-     */
     String PatId;
-     String date=java.time.LocalDate.now().toString(); 
+    String date=java.time.LocalDate.now().toString(); 
+    
     public Presc(String Patientid,String DocName,String PatName) {
         PatId=Patientid;
         try 
@@ -34,8 +24,9 @@ public class Presc extends javax.swing.JFrame {
             System.out.println("Connected to the database!");
         }
         catch(SQLException s){
-        
+            System.out.pritnln(s);   
         }
+        
         Panel = new javax.swing.JPanel();
         LPresc = new javax.swing.JLabel();
         Ldate = new javax.swing.JLabel();
@@ -75,14 +66,14 @@ public class Presc extends javax.swing.JFrame {
         setResizable(false);
 
         LPresc.setBackground(new java.awt.Color(0, 0, 255));
-        LPresc.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        LPresc.setFont(new java.awt.Font("Segoe UI", 1, 36)); 
         LPresc.setForeground(new java.awt.Color(0, 51, 255));
         LPresc.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LPresc.setText("Prescription");
         Panel.add(LPresc);
         LPresc.setBounds(270, 30, 222, 48);
 
-        Ldate.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ldate.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Ldate.setForeground(new java.awt.Color(51, 51, 255));
         Ldate.setText("Date :");
         Panel.add(Ldate);
@@ -94,7 +85,6 @@ public class Presc extends javax.swing.JFrame {
         Tdate.setText(date);
         Panel.add(Tdate);
         Tdate.setBounds(203, 129, 176, 30);
-
         
         TdocName.setText(DocName);
         TdocName.setEnabled(false);
@@ -102,7 +92,7 @@ public class Presc extends javax.swing.JFrame {
         Panel.add(TdocName);
         TdocName.setBounds(203, 172, 176, 30);
 
-        LdocName.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        LdocName.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         LdocName.setForeground(new java.awt.Color(51, 51, 255));
         LdocName.setText("Doctor Name :");
         Panel.add(LdocName);
@@ -114,7 +104,7 @@ public class Presc extends javax.swing.JFrame {
         Panel.add(TpatId);
         TpatId.setBounds(203, 215, 176, 30);
 
-        LpatName.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        LpatName.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         LpatName.setForeground(new java.awt.Color(51, 51, 255));
         LpatName.setText("Patient Name :");
         Panel.add(LpatName);
@@ -122,22 +112,20 @@ public class Presc extends javax.swing.JFrame {
         Panel.add(Tsoln);
         Tsoln.setBounds(203, 378, 176, 65);
 
-        Jsoln.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Jsoln.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Jsoln.setForeground(new java.awt.Color(51, 51, 255));
         Jsoln.setText("Solution :");
         Panel.add(Jsoln);
         Jsoln.setBounds(75, 394, 101, 30);
 
-        Lprob.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Lprob.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Lprob.setForeground(new java.awt.Color(51, 51, 255));
         Lprob.setText("Problem :");
         Panel.add(Lprob);
         Lprob.setBounds(75, 300, 101, 30);
 
-       
         Panel.add(Tprob);
         Tprob.setBounds(203, 301, 176, 59);
-
         
         TpatName.setText(PatName);
         TpatName.setDisabledTextColor(Color.black);
@@ -146,14 +134,14 @@ public class Presc extends javax.swing.JFrame {
         Panel.add(TpatName);
         TpatName.setBounds(203, 258, 176, 30);
 
-        LpatId.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        LpatId.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         LpatId.setForeground(new java.awt.Color(51, 51, 255));
         LpatId.setText("Patient ID :");
         Panel.add(LpatId);
         LpatId.setBounds(75, 214, 101, 30);
 
         Bsubmit.setBackground(new java.awt.Color(0, 51, 255));
-        Bsubmit.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Bsubmit.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Bsubmit.setForeground(new java.awt.Color(204, 255, 255));
         Bsubmit.setText("Submit");
         Bsubmit.setMnemonic('S');
@@ -165,49 +153,49 @@ public class Presc extends javax.swing.JFrame {
         Panel.add(Bsubmit);
         Bsubmit.setBounds(330, 490, 121, 40);
 
-        Ckpara.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        Ckpara.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         Ckpara.setText("Paracetomol");
        
         Panel.add(Ckpara);
         Ckpara.setBounds(450, 170, 130, 40);
 
-        CkVit.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        CkVit.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         CkVit.setText("Vitamin Tablets");
         Panel.add(CkVit);
         CkVit.setBounds(450, 220, 130, 30);
 
-        ckIrn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ckIrn.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         ckIrn.setText("Iron Tablets");
        
         Panel.add(ckIrn);
         ckIrn.setBounds(450, 270, 110, 20);
 
-        ckOrs.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ckOrs.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         ckOrs.setText("Ors");
         Panel.add(ckOrs);
         ckOrs.setBounds(450, 310, 110, 30);
 
-        Ckstrep.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        Ckstrep.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         Ckstrep.setText("Strepsils");
         Panel.add(Ckstrep);
         Ckstrep.setBounds(610, 170, 100, 40);
 
-        ckCal.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ckCal.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         ckCal.setText("Calcium Tablets");
         Panel.add(ckCal);
         ckCal.setBounds(600, 220, 130, 30);
 
-        CkMin.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        CkMin.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         CkMin.setText("Mineral Tablets");
         Panel.add(CkMin);
         CkMin.setBounds(610, 270, 120, 30);
 
-        ckCro.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ckCro.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         ckCro.setText("Crocin");
          Panel.add(ckCro);
         ckCro.setBounds(610, 310, 90, 30);
 
-        Ltablets.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        Ltablets.setFont(new java.awt.Font("Segoe UI", 0, 24)); 
         Ltablets.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Ltablets.setText("Tablets");
         Panel.add(Ltablets);
@@ -235,13 +223,11 @@ public class Presc extends javax.swing.JFrame {
     }                  
 
     private void TadditionalMouseClicked(java.awt.event.MouseEvent evt) {                                         
-        // TODO add your handling code here:
         Tadditional.setText("");
         Tadditional.setForeground(Color.BLACK);
     }                                        
 
     private void BsubmitActionPerformed(java.awt.event.ActionEvent evt) {                                        
-        // TODO add your handling code here:
         if(!(Tprob.getText().equals("")) && !(Tsoln.getText().equals("")))
         {
             try
@@ -280,7 +266,6 @@ public class Presc extends javax.swing.JFrame {
                 preparedStatement.setString(15, Tadditional.getText());
                 preparedStatement.setString(16,id);
                 int x= preparedStatement.executeUpdate();
-               // con.close();
                 Integer bill=0;
                 if(x==1){
                     if(Ckpara.isSelected()){bill+=50;}
@@ -307,17 +292,13 @@ public class Presc extends javax.swing.JFrame {
             catch(Exception ex){
                 ex.printStackTrace();
             }
-            
-           }
+        }
         else
         {
             JOptionPane.showMessageDialog(null, "Fill All Fields", "Warning !", JOptionPane.WARNING_MESSAGE);
         }
     }                                       
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -340,9 +321,7 @@ public class Presc extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Presc.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
 
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                
@@ -350,8 +329,8 @@ public class Presc extends javax.swing.JFrame {
             }
         });
     }
-    Connection con;
-    // Variables declaration - do not modify                     
+    
+    Connection con;                  
     private javax.swing.JButton Bsubmit;
     private javax.swing.JCheckBox CkMin;
     private javax.swing.JCheckBox CkVit;
@@ -377,6 +356,5 @@ public class Presc extends javax.swing.JFrame {
     private javax.swing.JCheckBox ckCro;
     private javax.swing.JCheckBox ckIrn;
     private javax.swing.JCheckBox ckOrs;
-    private javax.swing.JScrollPane jScrollPane1;
-    // End of variables declaration                   
+    private javax.swing.JScrollPane jScrollPane1;               
 }
