@@ -17,10 +17,6 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableModel;
 
-/**
- *
- * @author Gopisaran
- */
 public class AdminPage extends javax.swing.JFrame {
     public AdminPage() {
         String jdbcUrl = "jdbc:mysql://localhost:3306/hospitaldb";
@@ -131,7 +127,7 @@ public class AdminPage extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         title.setBackground(new java.awt.Color(102, 255, 102));
-        title.setFont(new java.awt.Font("Stencil", 0, 50)); // NOI18N
+        title.setFont(new java.awt.Font("Stencil", 0, 50)); 
         title.setForeground(new java.awt.Color(255, 255, 255));
         title.setText("H o s p i t a l     m a n a g e m e n t     s y s t e m");
         getContentPane().add(title);
@@ -145,7 +141,7 @@ public class AdminPage extends javax.swing.JFrame {
         Pnavigation.setLayout(null);
 
         BaddInfo.setBackground(new java.awt.Color(0, 204, 255));
-        BaddInfo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BaddInfo.setFont(new java.awt.Font("Segoe UI", 1, 18));
         BaddInfo.setForeground(new java.awt.Color(255, 255, 255));
         BaddInfo.setText("Add Information");
         BaddInfo.setActionCommand("addInfo");
@@ -163,7 +159,7 @@ public class AdminPage extends javax.swing.JFrame {
         BaddInfo.setBounds(30, 113, 235, 41);
 
         BdispInfo.setBackground(new java.awt.Color(0, 204, 255));
-        BdispInfo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BdispInfo.setFont(new java.awt.Font("Segoe UI", 1, 18)); 
         BdispInfo.setForeground(new java.awt.Color(255, 255, 255));
         BdispInfo.setText("Display Info");
         BdispInfo.setActionCommand("dispInfo");
@@ -176,7 +172,7 @@ public class AdminPage extends javax.swing.JFrame {
         BdispInfo.setBounds(30, 195, 235, 41);
 
         Bsearch.setBackground(new java.awt.Color(0, 204, 255));
-        Bsearch.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Bsearch.setFont(new java.awt.Font("Segoe UI", 1, 18)); 
         Bsearch.setForeground(new java.awt.Color(255, 255, 255));
         Bsearch.setText("Search Details");
         Bsearch.setActionCommand("searchInfo");
@@ -189,7 +185,7 @@ public class AdminPage extends javax.swing.JFrame {
         Bsearch.setBounds(30, 277, 235, 41);
 
         BeditInfo.setBackground(new java.awt.Color(0, 204, 255));
-        BeditInfo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BeditInfo.setFont(new java.awt.Font("Segoe UI", 1, 18)); 
         BeditInfo.setForeground(new java.awt.Color(255, 255, 255));
         BeditInfo.setText("Edit Information");
         BeditInfo.setActionCommand("editInfo");
@@ -202,7 +198,7 @@ public class AdminPage extends javax.swing.JFrame {
         BeditInfo.setBounds(30, 358, 235, 41);
 
         BeditFac.setBackground(new java.awt.Color(0, 204, 255));
-        BeditFac.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BeditFac.setFont(new java.awt.Font("Segoe UI", 1, 18)); 
         BeditFac.setForeground(new java.awt.Color(255, 255, 255));
         BeditFac.setText("Edit Facility");
         BeditFac.addActionListener(new java.awt.event.ActionListener() {
@@ -214,8 +210,8 @@ public class AdminPage extends javax.swing.JFrame {
         BeditFac.setBounds(30, 438, 235, 41);
 
         B_Logout.setBackground(new java.awt.Color(255, 0, 0));
-        B_Logout.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        B_Logout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospitalmanagementsystem/LOGOUT_icon.jpg"))); // NOI18N
+        B_Logout.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
+        B_Logout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospitalmanagementsystem/LOGOUT_icon.jpg"))); 
         B_Logout.setText("Logout");
         B_Logout.setIconTextGap(6);
         B_Logout.addActionListener(new java.awt.event.ActionListener() {
@@ -226,7 +222,7 @@ public class AdminPage extends javax.swing.JFrame {
         Pnavigation.add(B_Logout);
         B_Logout.setBounds(61, 523, 159, 41);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI Symbol", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI Symbol", 1, 24)); 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("TOOLS");
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -237,7 +233,7 @@ public class AdminPage extends javax.swing.JFrame {
         Pnavigation.setBounds(6, 58, 286, 619);
 
         Bback.setBackground(new java.awt.Color(51, 153, 255));
-        Bback.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Bback.setFont(new java.awt.Font("Segoe UI", 1, 18)); 
         Bback.setForeground(new java.awt.Color(255, 255, 255));
         Bback.setText("BACK");
         Bback.addActionListener(new java.awt.event.ActionListener() {
@@ -257,25 +253,25 @@ public class AdminPage extends javax.swing.JFrame {
         PRegPane3.setBackground(new java.awt.Color(0, 153, 255));
         PRegPane3.setLayout(null);
 
-        Lname.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Lname.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Lname.setForeground(new java.awt.Color(255, 255, 255));
         Lname.setText("Name :");
         PRegPane3.add(Lname);
         Lname.setBounds(72, 90, 92, 33);
 
-        LGender.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        LGender.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         LGender.setForeground(new java.awt.Color(255, 255, 255));
         LGender.setText("Gender :");
         PRegPane3.add(LGender);
         LGender.setBounds(565, 90, 86, 33);
 
-        Ldob.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ldob.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Ldob.setForeground(new java.awt.Color(255, 255, 255));
         Ldob.setText("D . O . B :");
         PRegPane3.add(Ldob);
         Ldob.setBounds(72, 135, 92, 22);
 
-        LBlood.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        LBlood.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         LBlood.setForeground(new java.awt.Color(255, 255, 255));
         LBlood.setText("Blood :");
         PRegPane3.add(LBlood);
@@ -283,13 +279,13 @@ public class AdminPage extends javax.swing.JFrame {
         PRegPane3.add(TName);
         TName.setBounds(201, 91, 282, 32);
 
-        Ladd2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ladd2.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Ladd2.setForeground(new java.awt.Color(255, 255, 255));
         Ladd2.setText("Email :");
         PRegPane3.add(Ladd2);
         Ladd2.setBounds(565, 231, 89, 32);
 
-        Ladd1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ladd1.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Ladd1.setForeground(new java.awt.Color(255, 255, 255));
         Ladd1.setText("Licence ID :");
         PRegPane3.add(Ladd1);
@@ -303,13 +299,13 @@ public class AdminPage extends javax.swing.JFrame {
         PRegPane3.add(Tadhaar);
         Tadhaar.setBounds(200, 230, 283, 32);
 
-        RFemale.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        RFemale.setFont(new java.awt.Font("Segoe UI", 0, 16)); 
         RFemale.setForeground(new java.awt.Color(255, 255, 255));
         RFemale.setText("Female");
         PRegPane3.add(RFemale);
         RFemale.setBounds(797, 89, 98, 33);
 
-        submit.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        submit.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); 
         submit.setForeground(new java.awt.Color(0, 102, 204));
         submit.setText("SUBMIT");
         submit.setActionCommand("Dsubmit");
@@ -322,7 +318,7 @@ public class AdminPage extends javax.swing.JFrame {
         submit.setBounds(446, 547, 155, 45);
 
         jComboBox34.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Day", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
-        jComboBox34.setName("Date"); // NOI18N
+        jComboBox34.setName("Date"); 
         PRegPane3.add(jComboBox34);
         jComboBox34.setBounds(201, 135, 78, 23);
 
@@ -334,7 +330,7 @@ public class AdminPage extends javax.swing.JFrame {
         PRegPane3.add(jComboBox36);
         jComboBox36.setBounds(390, 135, 93, 23);
 
-        TRegTitle.setFont(new java.awt.Font("Segoe UI Semibold", 1, 36)); // NOI18N
+        TRegTitle.setFont(new java.awt.Font("Segoe UI Semibold", 1, 36)); 
         TRegTitle.setForeground(new java.awt.Color(255, 255, 255));
         TRegTitle.setText("Doctor Registration Form");
         PRegPane3.add(TRegTitle);
@@ -352,55 +348,55 @@ public class AdminPage extends javax.swing.JFrame {
         PRegPane3.add(Tadd4);
         Tadd4.setBounds(700, 330, 253, 32);
 
-        Ladhaar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ladhaar.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Ladhaar.setForeground(new java.awt.Color(255, 255, 255));
         Ladhaar.setText("Aadhaar No. :");
         PRegPane3.add(Ladhaar);
         Ladhaar.setBounds(72, 232, 110, 30);
 
-        Lusrname.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Lusrname.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Lusrname.setForeground(new java.awt.Color(255, 255, 255));
         Lusrname.setText("Username :");
         PRegPane3.add(Lusrname);
         Lusrname.setBounds(70, 280, 92, 30);
 
-        Lpasswd.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Lpasswd.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Lpasswd.setForeground(new java.awt.Color(255, 255, 255));
         Lpasswd.setText("Password :");
         PRegPane3.add(Lpasswd);
         Lpasswd.setBounds(70, 330, 92, 30);
 
-        Ladd3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ladd3.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Ladd3.setForeground(new java.awt.Color(255, 255, 255));
         Ladd3.setText("Specilization :");
         PRegPane3.add(Ladd3);
         Ladd3.setBounds(565, 282, 109, 30);
 
-        Ladd4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ladd4.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Ladd4.setForeground(new java.awt.Color(255, 255, 255));
         Ladd4.setText("Experience :");
         PRegPane3.add(Ladd4);
         Ladd4.setBounds(565, 332, 92, 30);
 
-        terms.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        terms.setFont(new java.awt.Font("Segoe UI", 1, 16)); 
         terms.setForeground(new java.awt.Color(255, 255, 255));
         terms.setText("Accept Terms & Conditions");
         PRegPane3.add(terms);
         terms.setBounds(413, 495, 230, 26);
 
-        RMale.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        RMale.setFont(new java.awt.Font("Segoe UI", 0, 16)); 
         RMale.setForeground(new java.awt.Color(255, 255, 255));
         RMale.setText("Male");
         PRegPane3.add(RMale);
         RMale.setBounds(697, 89, 88, 33);
 
-        Lwarn.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        Lwarn.setFont(new java.awt.Font("Segoe UI", 0, 20)); 
         Lwarn.setForeground(new java.awt.Color(255, 0, 0));
         Lwarn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         PRegPane3.add(Lwarn);
         Lwarn.setBounds(315, 431, 397, 46);
 
-        LPhone.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        LPhone.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         LPhone.setForeground(new java.awt.Color(255, 255, 255));
         LPhone.setText("Phone No, :");
         PRegPane3.add(LPhone);
@@ -411,13 +407,13 @@ public class AdminPage extends javax.swing.JFrame {
         PsearchPane.setBackground(new java.awt.Color(0, 153, 204));
         PsearchPane.setLayout(null);
 
-        LsearchTitle.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        LsearchTitle.setFont(new java.awt.Font("Segoe UI", 0, 20)); 
         LsearchTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LsearchTitle.setText("Search Doctor Details");
         PsearchPane.add(LsearchTitle);
         LsearchTitle.setBounds(389, 65, 396, 40);
 
-        BsearchId.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        BsearchId.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         BsearchId.setText("Search");
         BsearchId.setMnemonic('S');
         BsearchId.addActionListener(new java.awt.event.ActionListener() {
@@ -429,7 +425,7 @@ public class AdminPage extends javax.swing.JFrame {
         BsearchId.setBounds(721, 188, 81, 32);
         BsearchId.getAccessibleContext().setAccessibleName("");
 
-        LsearchId.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        LsearchId.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         LsearchId.setText("Doctor Id :");
         PsearchPane.add(LsearchId);
         LsearchId.setBounds(265, 188, 113, 31);
@@ -452,7 +448,7 @@ public class AdminPage extends javax.swing.JFrame {
         PsearchPane.add(jScrollPane1);
         jScrollPane1.setBounds(198, 314, 685, 78);
 
-        Lsearchwarn.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        Lsearchwarn.setFont(new java.awt.Font("Segoe UI", 1, 24)); 
         Lsearchwarn.setForeground(new java.awt.Color(255, 0, 0));
         Lsearchwarn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Lsearchwarn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -475,35 +471,35 @@ public class AdminPage extends javax.swing.JFrame {
         PeditPane.setForeground(new java.awt.Color(0, 153, 204));
         PeditPane.setLayout(null);
 
-        LEDtitle.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        LEDtitle.setFont(new java.awt.Font("Segoe UI", 1, 36)); 
         LEDtitle.setForeground(new java.awt.Color(255, 255, 255));
         LEDtitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LEDtitle.setText("Edit Hospital Facilities");
         PeditPane.add(LEDtitle);
         LEDtitle.setBounds(340, 70, 380, 50);
 
-        Lcanteen.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Lcanteen.setFont(new java.awt.Font("Segoe UI", 0, 18)); 
         Lcanteen.setForeground(new java.awt.Color(255, 255, 255));
         Lcanteen.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         Lcanteen.setText("Canteen :");
         PeditPane.add(Lcanteen);
         Lcanteen.setBounds(325, 298, 130, 29);
 
-        Lscan.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Lscan.setFont(new java.awt.Font("Segoe UI", 0, 18)); 
         Lscan.setForeground(new java.awt.Color(255, 255, 255));
         Lscan.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         Lscan.setText("Scanners :");
         PeditPane.add(Lscan);
         Lscan.setBounds(300, 460, 155, 34);
 
-        Loxy.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Loxy.setFont(new java.awt.Font("Segoe UI", 0, 18)); 
         Loxy.setForeground(new java.awt.Color(255, 255, 255));
         Loxy.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         Loxy.setText("Oxygen Availability :");
         PeditPane.add(Loxy);
         Loxy.setBounds(285, 236, 170, 32);
 
-        LbloodSt.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        LbloodSt.setFont(new java.awt.Font("Segoe UI", 0, 18)); 
         LbloodSt.setForeground(new java.awt.Color(255, 255, 255));
         LbloodSt.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         LbloodSt.setText("Blood Stock :");
@@ -524,14 +520,14 @@ public class AdminPage extends javax.swing.JFrame {
         PeditPane.add(Tscan);
         Tscan.setBounds(490, 470, 193, 31);
 
-        Lpharm.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Lpharm.setFont(new java.awt.Font("Segoe UI", 0, 18)); 
         Lpharm.setForeground(new java.awt.Color(255, 255, 255));
         Lpharm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         Lpharm.setText("Pharmacy :");
         PeditPane.add(Lpharm);
         Lpharm.setBounds(300, 350, 155, 34);
 
-        Lamb.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Lamb.setFont(new java.awt.Font("Segoe UI", 0, 18)); 
         Lamb.setForeground(new java.awt.Color(255, 255, 255));
         Lamb.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         Lamb.setText("Ambulance :");
@@ -539,28 +535,28 @@ public class AdminPage extends javax.swing.JFrame {
         Lamb.setBounds(300, 405, 155, 34);
 
         RcantN.setBackground(new java.awt.Color(0, 153, 204));
-        RcantN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        RcantN.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         RcantN.setForeground(new java.awt.Color(255, 255, 255));
         RcantN.setText("No");
         PeditPane.add(RcantN);
         RcantN.setBounds(611, 302, 74, 25);
 
         Rcanty.setBackground(new java.awt.Color(0, 153, 204));
-        Rcanty.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        Rcanty.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         Rcanty.setForeground(new java.awt.Color(255, 255, 255));
         Rcanty.setText("Yes");
         PeditPane.add(Rcanty);
         Rcanty.setBounds(492, 302, 74, 25);
 
         RpharmY.setBackground(new java.awt.Color(0, 153, 204));
-        RpharmY.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        RpharmY.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         RpharmY.setForeground(new java.awt.Color(255, 255, 255));
         RpharmY.setText("Yes");
         PeditPane.add(RpharmY);
         RpharmY.setBounds(492, 357, 74, 25);
 
         RpharmN.setBackground(new java.awt.Color(0, 153, 204));
-        RpharmN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        RpharmN.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         RpharmN.setForeground(new java.awt.Color(255, 255, 255));
         RpharmN.setText("No");
         PeditPane.add(RpharmN);
@@ -581,7 +577,7 @@ public class AdminPage extends javax.swing.JFrame {
         PDisplay.setLayout(null);
 
         Disptable.setBackground(new java.awt.Color(102, 255, 255));
-        Disptable.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        Disptable.setFont(new java.awt.Font("Segoe UI", 0, 14)); 
         Disptable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -601,7 +597,7 @@ public class AdminPage extends javax.swing.JFrame {
         PDisplay.add(Ptable);
         Ptable.setBounds(49, 87, 995, 535);
 
-        LdispTitle.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        LdispTitle.setFont(new java.awt.Font("Segoe UI", 0, 20)); 
         LdispTitle.setForeground(new java.awt.Color(255, 255, 255));
         LdispTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LdispTitle.setText("Doctors Details");
@@ -613,17 +609,13 @@ public class AdminPage extends javax.swing.JFrame {
         getContentPane().add(PHome);
         PHome.setBounds(352, 90, 1115, 683);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospitalmanagementsystem/back.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospitalmanagementsystem/back.jpg"))); 
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, -10, 1740, 800);
 
         pack();
-    }                       
-
-    private void BaddInfoComponentAdded(java.awt.event.ContainerEvent evt) {                                        
-       
-    }                                       
+    }                                                             
 
     private void BaddInfoActionPerformed(java.awt.event.ActionEvent evt) {                                         
         if(evt.getActionCommand()=="addInfo"){
@@ -1178,6 +1170,7 @@ public class AdminPage extends javax.swing.JFrame {
         u.setExtendedState(JFrame.MAXIMIZED_BOTH);
         u.setVisible(true);
     }
+    
     Connection con;                 
     private javax.swing.JButton B_Logout;
     private javax.swing.JButton BaddInfo;
