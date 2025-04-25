@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package hospitalmanagementsystem;
 
 import com.mysql.cj.jdbc.result.ResultSetMetaData;
@@ -33,10 +29,6 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.plaf.PanelUI;
 
-/**
- *
- * @author Gopisaran
- */
 public class Registration extends javax.swing.JFrame {
     DefaultTableModel tbl;
     JCalendar c=new JCalendar();
@@ -51,13 +43,12 @@ public class Registration extends javax.swing.JFrame {
             System.out.println("Connected to the database!");
         }
         catch(SQLException s){
-        
+            System.out.prinrln(s);        
         }
         AdminId=AdId;
         this.AdminName=AdminName;
         initComponents();
     }
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         Gender = new javax.swing.ButtonGroup();
@@ -196,7 +187,7 @@ public class Registration extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         title.setBackground(new java.awt.Color(102, 255, 102));
-        title.setFont(new java.awt.Font("Stencil", 0, 50)); // NOI18N
+        title.setFont(new java.awt.Font("Stencil", 0, 50));
         title.setForeground(new java.awt.Color(255, 255, 255));
         title.setText("H o s p i t a l     m a n a g e m e n t     s y s t e m");
         getContentPane().add(title);
@@ -207,14 +198,14 @@ public class Registration extends javax.swing.JFrame {
         PsearchPane.setBackground(new java.awt.Color(0, 153, 204));
         PsearchPane.setLayout(null);
 
-        LsearchTitle.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        LsearchTitle.setFont(new java.awt.Font("Segoe UI", 1, 36));
         LsearchTitle.setForeground(new java.awt.Color(255, 255, 255));
         LsearchTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LsearchTitle.setText("Search Doctor Details");
         PsearchPane.add(LsearchTitle);
         LsearchTitle.setBounds(310, 60, 540, 40);
 
-        BsearchId.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BsearchId.setFont(new java.awt.Font("Segoe UI", 1, 18));
         BsearchId.setForeground(new java.awt.Color(0, 0, 204));
         BsearchId.setText("Search");
         BsearchId.setMnemonic('S');
@@ -227,7 +218,7 @@ public class Registration extends javax.swing.JFrame {
         BsearchId.setBounds(750, 280, 90, 30);
         BsearchId.getAccessibleContext().setAccessibleName("");
 
-        LsearchId.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        LsearchId.setFont(new java.awt.Font("Segoe UI", 1, 18));
         LsearchId.setForeground(new java.awt.Color(255, 255, 255));
         LsearchId.setText("Doctor Id :");
         PsearchPane.add(LsearchId);
@@ -251,14 +242,14 @@ public class Registration extends javax.swing.JFrame {
         PsearchPane.add(Psearch);
         Psearch.setBounds(230, 380, 685, 78);
 
-        Lsearchwarn.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        Lsearchwarn.setFont(new java.awt.Font("Segoe UI", 1, 24));
         Lsearchwarn.setForeground(new java.awt.Color(255, 0, 0));
         Lsearchwarn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Lsearchwarn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         PsearchPane.add(Lsearchwarn);
         Lsearchwarn.setBounds(369, 489, 316, 38);
 
-        Bedit.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Bedit.setFont(new java.awt.Font("Segoe UI", 1, 18));
         Bedit.setForeground(new java.awt.Color(0, 0, 255));
         Bedit.setText("Edit");
         Bedit.setVisible(false);
@@ -270,7 +261,7 @@ public class Registration extends javax.swing.JFrame {
         PsearchPane.add(Bedit);
         Bedit.setBounds(420, 540, 103, 35);
 
-        Bdelete.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Bdelete.setFont(new java.awt.Font("Segoe UI", 1, 18));
         Bdelete.setForeground(new java.awt.Color(0, 0, 255));
         Bdelete.setText("Delete");
         Bdelete.setVisible(false);
@@ -282,7 +273,7 @@ public class Registration extends javax.swing.JFrame {
         PsearchPane.add(Bdelete);
         Bdelete.setBounds(570, 540, 107, 35);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospitalmanagementsystem/search.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospitalmanagementsystem/search.jpg")));
         jLabel1.setToolTipText("");
         PsearchPane.add(jLabel1);
         jLabel1.setBounds(510, 130, 90, 90);
@@ -293,7 +284,7 @@ public class Registration extends javax.swing.JFrame {
         PDisplay.setLayout(null);
 
         Disptable.setBackground(new java.awt.Color(102, 255, 255));
-        Disptable.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        Disptable.setFont(new java.awt.Font("Segoe UI", 0, 14));
         Disptable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -313,7 +304,7 @@ public class Registration extends javax.swing.JFrame {
         PDisplay.add(Ptable);
         Ptable.setBounds(49, 87, 995, 535);
 
-        LdispTitle.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        LdispTitle.setFont(new java.awt.Font("Segoe UI", 0, 20));
         LdispTitle.setForeground(new java.awt.Color(255, 255, 255));
         LdispTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LdispTitle.setText("Doctors Details");
@@ -326,25 +317,25 @@ public class Registration extends javax.swing.JFrame {
         PRegPane3.setLayout(null);
         PRegPane3.add(c);
 
-        Lname.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Lname.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Lname.setForeground(new java.awt.Color(255, 255, 255));
         Lname.setText("Name :");
         PRegPane3.add(Lname);
         Lname.setBounds(80, 180, 92, 33);
 
-        LGender.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        LGender.setFont(new java.awt.Font("Segoe UI", 1, 14));
         LGender.setForeground(new java.awt.Color(255, 255, 255));
         LGender.setText("Gender :");
         PRegPane3.add(LGender);
         LGender.setBounds(570, 160, 86, 33);
 
-        Ldob.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ldob.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Ldob.setForeground(new java.awt.Color(255, 255, 255));
         Ldob.setText("D . O . B :");
         PRegPane3.add(Ldob);
         Ldob.setBounds(80, 230, 92, 22);
 
-        LBlood.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        LBlood.setFont(new java.awt.Font("Segoe UI", 1, 14));
         LBlood.setForeground(new java.awt.Color(255, 255, 255));
         LBlood.setText("Blood :");
         PRegPane3.add(LBlood);
@@ -352,13 +343,13 @@ public class Registration extends javax.swing.JFrame {
         PRegPane3.add(TName);
         TName.setBounds(200, 190, 282, 32);
 
-        Ladd2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ladd2.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Ladd2.setForeground(new java.awt.Color(255, 255, 255));
         Ladd2.setText("Email :");
         PRegPane3.add(Ladd2);
         Ladd2.setBounds(570, 310, 89, 32);
 
-        Ladd1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ladd1.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Ladd1.setForeground(new java.awt.Color(255, 255, 255));
         Ladd1.setText("Licence ID :");
         PRegPane3.add(Ladd1);
@@ -372,7 +363,7 @@ public class Registration extends javax.swing.JFrame {
         PRegPane3.add(Tadhaar);
         Tadhaar.setBounds(200, 320, 283, 32);
 
-        RFemale.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        RFemale.setFont(new java.awt.Font("Segoe UI", 0, 16));
         RFemale.setForeground(new java.awt.Color(255, 255, 255));
         RFemale.setText("Female");
         RFemale.addActionListener(new java.awt.event.ActionListener() {
@@ -383,7 +374,7 @@ public class Registration extends javax.swing.JFrame {
         PRegPane3.add(RFemale);
         RFemale.setBounds(800, 160, 98, 33);
 
-        submit.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        submit.setFont(new java.awt.Font("Segoe UI Black", 1, 18));
         submit.setForeground(new java.awt.Color(0, 102, 204));
         submit.setText("SUBMIT");
         submit.setActionCommand("Dsubmit");
@@ -395,7 +386,7 @@ public class Registration extends javax.swing.JFrame {
         PRegPane3.add(submit);
         submit.setBounds(470, 540, 155, 45);
 
-        LRegTitle.setFont(new java.awt.Font("Segoe UI Semibold", 1, 36)); // NOI18N
+        LRegTitle.setFont(new java.awt.Font("Segoe UI Semibold", 1, 36));
         LRegTitle.setForeground(new java.awt.Color(255, 255, 255));
         LRegTitle.setText("Doctor Registration Form");
         PRegPane3.add(LRegTitle);
@@ -413,56 +404,56 @@ public class Registration extends javax.swing.JFrame {
         PRegPane3.add(Tadd4);
         Tadd4.setBounds(700, 410, 253, 32);
 
-        Ladhaar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ladhaar.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Ladhaar.setForeground(new java.awt.Color(255, 255, 255));
         Ladhaar.setText("Aadhaar No. :");
         PRegPane3.add(Ladhaar);
         Ladhaar.setBounds(80, 330, 110, 30);
 
-        Lusrname.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Lusrname.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Lusrname.setForeground(new java.awt.Color(255, 255, 255));
         Lusrname.setText("Username :");
         PRegPane3.add(Lusrname);
         Lusrname.setBounds(70, 370, 92, 30);
 
-        Lpasswd.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Lpasswd.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Lpasswd.setForeground(new java.awt.Color(255, 255, 255));
         Lpasswd.setText("Password :");
         PRegPane3.add(Lpasswd);
         Lpasswd.setBounds(70, 420, 92, 30);
 
-        Ladd3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ladd3.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Ladd3.setForeground(new java.awt.Color(255, 255, 255));
         Ladd3.setText("Specilization :");
         PRegPane3.add(Ladd3);
         Ladd3.setBounds(570, 360, 109, 30);
 
-        Ladd4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ladd4.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Ladd4.setForeground(new java.awt.Color(255, 255, 255));
         Ladd4.setText("Experience :");
         PRegPane3.add(Ladd4);
         Ladd4.setBounds(570, 410, 92, 30);
 
-        terms.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        terms.setFont(new java.awt.Font("Segoe UI", 1, 16));
         terms.setForeground(new java.awt.Color(255, 255, 255));
         terms.setText("Accept Terms & Conditions");
         PRegPane3.add(terms);
         terms.setBounds(413, 495, 230, 26);
 
-        RMale.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        RMale.setFont(new java.awt.Font("Segoe UI", 0, 16));
         RMale.setForeground(new java.awt.Color(255, 255, 255));
         RMale.setSelected(true);
         RMale.setText("Male");
         PRegPane3.add(RMale);
         RMale.setBounds(700, 160, 88, 33);
 
-        Lwarn.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        Lwarn.setFont(new java.awt.Font("Segoe UI", 0, 20));
         Lwarn.setForeground(new java.awt.Color(255, 0, 0));
         Lwarn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         PRegPane3.add(Lwarn);
         Lwarn.setBounds(315, 431, 397, 46);
 
-        LPhone.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        LPhone.setFont(new java.awt.Font("Segoe UI", 1, 14));
         LPhone.setForeground(new java.awt.Color(255, 255, 255));
         LPhone.setText("Phone No, :");
         PRegPane3.add(LPhone);
@@ -494,35 +485,35 @@ public class Registration extends javax.swing.JFrame {
         PeditPane.setForeground(new java.awt.Color(0, 153, 204));
         PeditPane.setLayout(null);
 
-        LEDtitle.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        LEDtitle.setFont(new java.awt.Font("Segoe UI", 1, 36));
         LEDtitle.setForeground(new java.awt.Color(255, 255, 255));
         LEDtitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LEDtitle.setText("Edit Hospital Facilities");
         PeditPane.add(LEDtitle);
         LEDtitle.setBounds(330, 0, 380, 50);
 
-        Lcanteen.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Lcanteen.setFont(new java.awt.Font("Segoe UI", 1, 18));
         Lcanteen.setForeground(new java.awt.Color(255, 255, 255));
         Lcanteen.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         Lcanteen.setText("Canteen :");
         PeditPane.add(Lcanteen);
         Lcanteen.setBounds(90, 300, 130, 29);
 
-        Lscan.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Lscan.setFont(new java.awt.Font("Segoe UI", 1, 18));
         Lscan.setForeground(new java.awt.Color(255, 255, 255));
         Lscan.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         Lscan.setText("Scanners :");
         PeditPane.add(Lscan);
         Lscan.setBounds(510, 240, 155, 34);
 
-        Loxy.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Loxy.setFont(new java.awt.Font("Segoe UI", 1, 18));
         Loxy.setForeground(new java.awt.Color(255, 255, 255));
         Loxy.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         Loxy.setText("Oxygen Availability :");
         PeditPane.add(Loxy);
         Loxy.setBounds(40, 240, 190, 32);
 
-        LbloodSt.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        LbloodSt.setFont(new java.awt.Font("Segoe UI", 1, 18));
         LbloodSt.setForeground(new java.awt.Color(255, 255, 255));
         LbloodSt.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         LbloodSt.setText("Blood Stock :");
@@ -543,14 +534,14 @@ public class Registration extends javax.swing.JFrame {
         PeditPane.add(Tscan);
         Tscan.setBounds(700, 250, 193, 31);
 
-        Lpharm.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Lpharm.setFont(new java.awt.Font("Segoe UI", 1, 18));
         Lpharm.setForeground(new java.awt.Color(255, 255, 255));
         Lpharm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         Lpharm.setText("Pharmacy :");
         PeditPane.add(Lpharm);
         Lpharm.setBounds(70, 350, 155, 34);
 
-        Lamb.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Lamb.setFont(new java.awt.Font("Segoe UI", 1, 18));
         Lamb.setForeground(new java.awt.Color(255, 255, 255));
         Lamb.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         Lamb.setText("Ambulance :");
@@ -558,28 +549,28 @@ public class Registration extends javax.swing.JFrame {
         Lamb.setBounds(510, 190, 155, 34);
 
         RcantN.setBackground(new java.awt.Color(0, 153, 204));
-        RcantN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        RcantN.setFont(new java.awt.Font("Segoe UI", 0, 14));
         RcantN.setForeground(new java.awt.Color(255, 255, 255));
         RcantN.setText("No");
         PeditPane.add(RcantN);
         RcantN.setBounds(380, 300, 74, 25);
 
         Rcanty.setBackground(new java.awt.Color(0, 153, 204));
-        Rcanty.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        Rcanty.setFont(new java.awt.Font("Segoe UI", 0, 14));
         Rcanty.setForeground(new java.awt.Color(255, 255, 255));
         Rcanty.setText("Yes");
         PeditPane.add(Rcanty);
         Rcanty.setBounds(260, 300, 74, 25);
 
         RpharmY.setBackground(new java.awt.Color(0, 153, 204));
-        RpharmY.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        RpharmY.setFont(new java.awt.Font("Segoe UI", 0, 14));
         RpharmY.setForeground(new java.awt.Color(255, 255, 255));
         RpharmY.setText("Yes");
         PeditPane.add(RpharmY);
         RpharmY.setBounds(260, 350, 74, 25);
 
         RpharmN.setBackground(new java.awt.Color(0, 153, 204));
-        RpharmN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        RpharmN.setFont(new java.awt.Font("Segoe UI", 0, 14));
         RpharmN.setForeground(new java.awt.Color(255, 255, 255));
         RpharmN.setText("No");
         RpharmN.addActionListener(new java.awt.event.ActionListener() {
@@ -599,11 +590,11 @@ public class Registration extends javax.swing.JFrame {
         PeditPane.add(Bedsubmit);
         Bedsubmit.setBounds(440, 580, 161, 42);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospitalmanagementsystem/edit.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospitalmanagementsystem/edit.png")));
         PeditPane.add(jLabel2);
         jLabel2.setBounds(470, 60, 100, 100);
 
-        Lroom.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Lroom.setFont(new java.awt.Font("Segoe UI", 1, 18));
         Lroom.setForeground(new java.awt.Color(255, 255, 255));
         Lroom.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         Lroom.setText("Rooms Available :");
@@ -623,25 +614,25 @@ public class Registration extends javax.swing.JFrame {
         PRegPane4.setBackground(new java.awt.Color(0, 153, 255));
         PRegPane4.setLayout(null);
 
-        Lname1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Lname1.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Lname1.setForeground(new java.awt.Color(255, 255, 255));
         Lname1.setText("Name :");
         PRegPane4.add(Lname1);
         Lname1.setBounds(70, 200, 92, 33);
 
-        LGender1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        LGender1.setFont(new java.awt.Font("Segoe UI", 1, 14));
         LGender1.setForeground(new java.awt.Color(255, 255, 255));
         LGender1.setText("Gender :");
         PRegPane4.add(LGender1);
         LGender1.setBounds(570, 200, 86, 33);
 
-        Ldob1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ldob1.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Ldob1.setForeground(new java.awt.Color(255, 255, 255));
         Ldob1.setText("D . O . B :");
         PRegPane4.add(Ldob1);
         Ldob1.setBounds(70, 240, 92, 22);
 
-        LBlood1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        LBlood1.setFont(new java.awt.Font("Segoe UI", 1, 14));
         LBlood1.setForeground(new java.awt.Color(255, 255, 255));
         LBlood1.setText("Blood :");
         PRegPane4.add(LBlood1);
@@ -649,13 +640,13 @@ public class Registration extends javax.swing.JFrame {
         PRegPane4.add(TName1);
         TName1.setBounds(200, 200, 282, 32);
 
-        Ladd5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ladd5.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Ladd5.setForeground(new java.awt.Color(255, 255, 255));
         Ladd5.setText("Email :");
         PRegPane4.add(Ladd5);
         Ladd5.setBounds(570, 340, 89, 32);
 
-        Lremark.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Lremark.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Lremark.setForeground(new java.awt.Color(255, 255, 255));
         Lremark.setText("Remark :");
         PRegPane4.add(Lremark);
@@ -675,7 +666,7 @@ public class Registration extends javax.swing.JFrame {
         PRegPane4.add(Tadhaar1);
         Tadhaar1.setBounds(200, 340, 283, 32);
 
-        LRegTitle1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 36)); // NOI18N
+        LRegTitle1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 36));
         LRegTitle1.setForeground(new java.awt.Color(255, 255, 255));
         LRegTitle1.setText("My Profile");
         PRegPane4.add(LRegTitle1);
@@ -687,37 +678,37 @@ public class Registration extends javax.swing.JFrame {
         PRegPane4.add(Tpasswd1);
         Tpasswd1.setBounds(200, 440, 282, 32);
 
-        Ladhaar1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Ladhaar1.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Ladhaar1.setForeground(new java.awt.Color(255, 255, 255));
         Ladhaar1.setText("Aadhaar No. :");
         PRegPane4.add(Ladhaar1);
         Ladhaar1.setBounds(70, 340, 110, 30);
 
-        Lusrname1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Lusrname1.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Lusrname1.setForeground(new java.awt.Color(255, 255, 255));
         Lusrname1.setText("Username :");
         PRegPane4.add(Lusrname1);
         Lusrname1.setBounds(70, 390, 92, 30);
 
-        Lpasswd1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Lpasswd1.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Lpasswd1.setForeground(new java.awt.Color(255, 255, 255));
         Lpasswd1.setText("Password :");
         PRegPane4.add(Lpasswd1);
         Lpasswd1.setBounds(70, 440, 92, 30);
 
-        Lspec.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Lspec.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Lspec.setForeground(new java.awt.Color(255, 255, 255));
         Lspec.setText("Specilization :");
         PRegPane4.add(Lspec);
         Lspec.setBounds(570, 390, 109, 30);
 
-        Lwarn1.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        Lwarn1.setFont(new java.awt.Font("Segoe UI", 0, 20));
         Lwarn1.setForeground(new java.awt.Color(255, 0, 0));
         Lwarn1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         PRegPane4.add(Lwarn1);
         Lwarn1.setBounds(320, 500, 397, 46);
 
-        LPhone1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        LPhone1.setFont(new java.awt.Font("Segoe UI", 1, 14));
         LPhone1.setForeground(new java.awt.Color(255, 255, 255));
         LPhone1.setText("Phone No, :");
         PRegPane4.add(LPhone1);
@@ -735,7 +726,7 @@ public class Registration extends javax.swing.JFrame {
         PRegPane4.add(Tblood);
         Tblood.setBounds(700, 240, 80, 30);
 
-        Lexp.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Lexp.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Lexp.setForeground(new java.awt.Color(255, 255, 255));
         Lexp.setText("Experience :");
         PRegPane4.add(Lexp);
@@ -743,7 +734,7 @@ public class Registration extends javax.swing.JFrame {
         PRegPane4.add(Texp);
         Texp.setBounds(700, 290, 256, 32);
 
-        Bupdate.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Bupdate.setFont(new java.awt.Font("Segoe UI", 1, 14));
         Bupdate.setForeground(new java.awt.Color(0, 102, 255));
         Bupdate.setText("Update");
         Bupdate.addActionListener(new java.awt.event.ActionListener() {
@@ -772,9 +763,7 @@ public class Registration extends javax.swing.JFrame {
         BupImg2.setBounds(920, 220, 130, 23);
 
         PHome.addTab("", PRegPane4);
-
         PHome.setSelectedIndex(4);
-
         getContentPane().add(PHome);
         PHome.setBounds(352, 90, 1120, 680);
 
@@ -786,7 +775,7 @@ public class Registration extends javax.swing.JFrame {
         Pnavigation.setLayout(null);
 
         BaddInfo.setBackground(new java.awt.Color(0, 204, 255));
-        BaddInfo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BaddInfo.setFont(new java.awt.Font("Segoe UI", 1, 18));
         BaddInfo.setForeground(new java.awt.Color(255, 255, 255));
         BaddInfo.setText("Add Information");
         BaddInfo.setActionCommand("addInfo");
@@ -804,7 +793,7 @@ public class Registration extends javax.swing.JFrame {
         BaddInfo.setBounds(30, 113, 235, 41);
 
         BdispInfo.setBackground(new java.awt.Color(0, 204, 255));
-        BdispInfo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BdispInfo.setFont(new java.awt.Font("Segoe UI", 1, 18));
         BdispInfo.setForeground(new java.awt.Color(255, 255, 255));
         BdispInfo.setText("Display Info");
         BdispInfo.setActionCommand("dispInfo");
@@ -817,7 +806,7 @@ public class Registration extends javax.swing.JFrame {
         BdispInfo.setBounds(30, 195, 235, 41);
 
         Bsearch.setBackground(new java.awt.Color(0, 204, 255));
-        Bsearch.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Bsearch.setFont(new java.awt.Font("Segoe UI", 1, 18));
         Bsearch.setForeground(new java.awt.Color(255, 255, 255));
         Bsearch.setText("Search Details");
         Bsearch.setActionCommand("searchInfo");
@@ -830,7 +819,7 @@ public class Registration extends javax.swing.JFrame {
         Bsearch.setBounds(30, 277, 235, 41);
 
         BeditInfo.setBackground(new java.awt.Color(0, 204, 255));
-        BeditInfo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BeditInfo.setFont(new java.awt.Font("Segoe UI", 1, 18));
         BeditInfo.setForeground(new java.awt.Color(255, 255, 255));
         BeditInfo.setText("Edit Information");
         BeditInfo.setActionCommand("editInfo");
@@ -843,7 +832,7 @@ public class Registration extends javax.swing.JFrame {
         BeditInfo.setBounds(30, 358, 235, 41);
 
         BmyProfile.setBackground(new java.awt.Color(0, 204, 255));
-        BmyProfile.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BmyProfile.setFont(new java.awt.Font("Segoe UI", 1, 18));
         BmyProfile.setForeground(new java.awt.Color(255, 255, 255));
         BmyProfile.setText("My Profile");
         BmyProfile.addActionListener(new java.awt.event.ActionListener() {
@@ -855,8 +844,8 @@ public class Registration extends javax.swing.JFrame {
         BmyProfile.setBounds(30, 438, 235, 41);
 
         B_Logout.setBackground(new java.awt.Color(255, 0, 0));
-        B_Logout.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        B_Logout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospitalmanagementsystem/LOGOUT_icon.jpg"))); // NOI18N
+        B_Logout.setFont(new java.awt.Font("Segoe UI", 1, 14));
+        B_Logout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospitalmanagementsystem/LOGOUT_icon.jpg")));
         B_Logout.setText("Logout");
         B_Logout.setIconTextGap(6);
         B_Logout.addActionListener(new java.awt.event.ActionListener() {
@@ -867,7 +856,7 @@ public class Registration extends javax.swing.JFrame {
         Pnavigation.add(B_Logout);
         B_Logout.setBounds(61, 523, 159, 41);
 
-        Ltools.setFont(new java.awt.Font("Segoe UI Symbol", 1, 24)); // NOI18N
+        Ltools.setFont(new java.awt.Font("Segoe UI Symbol", 1, 24));
         Ltools.setForeground(new java.awt.Color(255, 255, 255));
         Ltools.setText("TOOLS");
         Ltools.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -878,7 +867,7 @@ public class Registration extends javax.swing.JFrame {
         Pnavigation.setBounds(10, 60, 300, 610);
 
         Bback.setBackground(new java.awt.Color(51, 153, 255));
-        Bback.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Bback.setFont(new java.awt.Font("Segoe UI", 1, 18));
         Bback.setForeground(new java.awt.Color(255, 255, 255));
         Bback.setText("BACK");
         Bback.addActionListener(new java.awt.event.ActionListener() {
@@ -892,14 +881,13 @@ public class Registration extends javax.swing.JFrame {
         getContentPane().add(P_BorderPane);
         P_BorderPane.setBounds(20, 90, 320, 683);
 
-        LBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospitalmanagementsystem/back.jpg"))); // NOI18N
+        LBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospitalmanagementsystem/back.jpg")));
         LBackground.setText("jLabel1");
         getContentPane().add(LBackground);
         LBackground.setBounds(-10, -20, 1770, 800);
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
-
+    }
      private boolean validatePhone(){
         String val = TPhone.getText().toString().trim();
         String validation = "^[0-9]{10}$";
@@ -915,8 +903,8 @@ public class Registration extends javax.swing.JFrame {
         {
             return true;
         }
-        }
-        private boolean validatePassword(){
+    }
+    private boolean validatePassword(){
         String val = Tpasswd.getText().toString().trim();
         String validation = "[a-zA-Z0-9]+[@#$%^&0-9]+[a-zA-Z0-9]+";
         if(val.isEmpty()){
@@ -932,9 +920,7 @@ public class Registration extends javax.swing.JFrame {
         }
     }
 
-
-       
-        private boolean validateName(){
+    private boolean validateName(){
         String val = TName.getText().toString().trim();
         if(val.isEmpty()){
             JOptionPane.showMessageDialog(this, "Field can't be empty", "NameError", HEIGHT);
@@ -944,13 +930,8 @@ public class Registration extends javax.swing.JFrame {
              return true;
         }
     }
-        
-    private void BaddInfoComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_BaddInfoComponentAdded
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_BaddInfoComponentAdded
 
-    private void BaddInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BaddInfoActionPerformed
+    private void BaddInfoActionPerformed(java.awt.event.ActionEvent evt) {
         if(evt.getActionCommand()=="addInfo"){
             PHome.setSelectedIndex(2);
             BaddInfo.setText("Add Doctor");
@@ -1026,9 +1007,9 @@ public class Registration extends javax.swing.JFrame {
             BsearchId.setActionCommand("searchDoc");
           
         }
-    }//GEN-LAST:event_BaddInfoActionPerformed
+    }
 
-    private void BdispInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BdispInfoActionPerformed
+    private void BdispInfoActionPerformed(java.awt.event.ActionEvent evt) {
         if(evt.getActionCommand()=="addnurse"){
             LRegTitle.setText("Nurse Registration Form :");
             submit.setActionCommand("Nsubmit");
@@ -1106,9 +1087,9 @@ public class Registration extends javax.swing.JFrame {
             Bdelete.setActionCommand("delNurse");            
         }
         
-    }//GEN-LAST:event_BdispInfoActionPerformed
+    }
 
-    private void BsearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BsearchActionPerformed
+    private void BsearchActionPerformed(java.awt.event.ActionEvent evt) {
         if(evt.getActionCommand()=="searchInfo"){
             PHome.setSelectedIndex(0);
             Psearch.setVisible(false);
@@ -1188,10 +1169,9 @@ public class Registration extends javax.swing.JFrame {
              Bdelete.setActionCommand("delPat");
             BsearchId.setActionCommand("searchPat");
         }
-    }//GEN-LAST:event_BsearchActionPerformed
+    }
 
-    private void BeditInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BeditInfoActionPerformed
-       
+    private void BeditInfoActionPerformed(java.awt.event.ActionEvent evt) {       
         if(evt.getActionCommand()=="editInfo"){
             LsearchTitle.setText("Edit Doctor Details :");
             LsearchId.setText("Doctor Id :");
@@ -1245,16 +1225,16 @@ public class Registration extends javax.swing.JFrame {
             ex.printStackTrace();
         }
         }
-    }//GEN-LAST:event_BeditInfoActionPerformed
+    }
 
-    private void B_LogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_LogoutActionPerformed
+    private void B_LogoutActionPerformed(java.awt.event.ActionEvent evt) {
         LoginForm l=new LoginForm();
         l.generateCaptcha();
         l.setExtendedState(JFrame.MAXIMIZED_BOTH);
         l.setVisible(true);
-    }//GEN-LAST:event_B_LogoutActionPerformed
+    }
 
-    private void BbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BbackActionPerformed
+    private void BbackActionPerformed(java.awt.event.ActionEvent evt) {
         PHome.setSelectedIndex(4);
         LRegTitle.setText("Doctor registration Form :");
         BaddInfo.setText("Add Information");
@@ -1266,210 +1246,199 @@ public class Registration extends javax.swing.JFrame {
         BeditInfo.setText("Edit Information");
         BeditInfo.setActionCommand("editInfo");
 
-    }//GEN-LAST:event_BbackActionPerformed
+    }
 
-    private void submitsubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitsubmitActionPerformed
+    private void submitsubmitActionPerformed(java.awt.event.ActionEvent evt) {
        if(terms.isSelected()){
             if((validateName())&& (validatePhone()) && !(Tadhaar.getText().
                     equals("")) && !(Tusrname.getText().equals(""))&& (validatePassword()) && 
                     !(Tadd1.getText().equals("")) && !(Tadd2.getText().equals("")) && !(Tadd3.getText()
                     .equals("")) && !(Tadd4.getText().equals(""))&&BupImg.getActionCommand()=="success" ){
                 if(evt.getActionCommand()=="Dsubmit"){
-                   
-
-        try 
-        {
+                    try 
+                    {
+                        
+                        String name=TName.getText();
+                        String spec =Tadd3.getText();
+                        Integer rank=Integer.parseInt(Tadd4.getText());
+                        Long phone=Long.parseLong(TPhone.getText());
+                        String dob=((JTextField)dateChooser.getDateEditor().getUiComponent()).getText();
+                        boolean avail=true;
+                        String pass=Tpasswd.getText();
+                        Long ad=Long.parseLong(Tadhaar.getText());
+                        String blood=(String) C_Blood.getSelectedItem();
+                        String user=Tusrname.getText();
+                        Integer lic=Integer.parseInt(Tadd1.getText());
+                        String email=Tadd2.getText();
+                        String gen="";
+                        if(RMale.isSelected())
+                        {
+                            gen="Male";
+                        }
+                        else{
+                            gen="Female";
+                        }
+                        String insertQuery = "INSERT INTO doctor(Name,Specilization,Rank,Phone,DOB,Available,Password,Aadhaar_No,Blood,Username,LICid,email,Gender,image) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
             
-            String name=TName.getText();
-            String spec =Tadd3.getText();
-            Integer rank=Integer.parseInt(Tadd4.getText());
-            Long phone=Long.parseLong(TPhone.getText());
-            String dob=((JTextField)dateChooser.getDateEditor().getUiComponent()).getText();
-            boolean avail=true;
-            String pass=Tpasswd.getText();
-            Long ad=Long.parseLong(Tadhaar.getText());
-            String blood=(String) C_Blood.getSelectedItem();
-            String user=Tusrname.getText();
-            Integer lic=Integer.parseInt(Tadd1.getText());
-            String email=Tadd2.getText();
-            String gen="";
-            if(RMale.isSelected())
-            {
-                gen="Male";
-            }
-            else{
-                gen="Female";
-            }
-            String insertQuery = "INSERT INTO doctor(Name,Specilization,Rank,Phone,DOB,Available,Password,Aadhaar_No,Blood,Username,LICid,email,Gender,image) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
-
-            try (PreparedStatement preparedStatement = con.prepareStatement(insertQuery)) 
-            {
-                preparedStatement.setString(1, name);
-                preparedStatement.setString(2, spec);
-                preparedStatement.setInt(3, rank);
-                preparedStatement.setString(4, phone.toString());
-                preparedStatement.setString(5, dob);
-                preparedStatement.setBoolean(6, avail);
-                preparedStatement.setString(7, pass);
-                preparedStatement.setString(8, ad.toString());
-                preparedStatement.setString(9, blood);
-                preparedStatement.setString(10, user);
-                preparedStatement.setInt(11, lic);
-                preparedStatement.setString(12, email);
-                preparedStatement.setString(13, gen);
-                preparedStatement.setBinaryStream(14, input, (int) imageFile.length());
-                preparedStatement.executeUpdate();
-                
-            }
-            
-        }
-        catch (SQLException e) 
-        {
-            e.printStackTrace();
-            Lwarn.setText("*** Invalid Data And Image Entered ***");
-            Lwarn.setForeground(Color.red);
-        }BupImg.setActionCommand("unsuccess");
+                        try (PreparedStatement preparedStatement = con.prepareStatement(insertQuery)) 
+                        {
+                            preparedStatement.setString(1, name);
+                            preparedStatement.setString(2, spec);
+                            preparedStatement.setInt(3, rank);
+                            preparedStatement.setString(4, phone.toString());
+                            preparedStatement.setString(5, dob);
+                            preparedStatement.setBoolean(6, avail);
+                            preparedStatement.setString(7, pass);
+                            preparedStatement.setString(8, ad.toString());
+                            preparedStatement.setString(9, blood);
+                            preparedStatement.setString(10, user);
+                            preparedStatement.setInt(11, lic);
+                            preparedStatement.setString(12, email);
+                            preparedStatement.setString(13, gen);
+                            preparedStatement.setBinaryStream(14, input, (int) imageFile.length());
+                            preparedStatement.executeUpdate();
+                            
+                        }
+                    }
+                    catch (SQLException e) 
+                    {
+                        e.printStackTrace();
+                        Lwarn.setText("*** Invalid Data And Image Entered ***");
+                        Lwarn.setForeground(Color.red);
+                    }
+                    BupImg.setActionCommand("unsuccess");
                     Lwarn.setText("*** Registration Successfull ***");
                     Lwarn.setForeground(Color.green);
                 }
                 else if(evt.getActionCommand()=="Nsubmit"){
-                    
-                     try 
-        {
+                     try{
             
-            String name=TName.getText();                                                            
-            String spec =Tadd1.getText();                                                           
-            Integer exp=Integer.parseInt(Tadd4.getText());                                        
-            Integer phone=Integer.parseInt(TPhone.getText());                                     
-            String dob=((JTextField)dateChooser.getDateEditor().getUiComponent()).getText();        
-            boolean avail=true;                                                                     
-            String pass=Tpasswd.getText();                                                          
-            Long ad=Long.parseLong(Tadhaar.getText());                                              
-            String blood=(String) C_Blood.getSelectedItem();                                        
-            String user=Tusrname.getText();                                                         
-            String remark=Tadd3.getText();
-            String email=Tadd2.getText();
-            String gen="";
-            if(RMale.isSelected()){
-                gen="Male";
-            }
-            else{
-                gen="Female";
-            }
-            String insertQuery = "INSERT INTO Nurse(Name,Specialization,experience,PhoneNo,DOB,Availability,Password,AadhaarNo,Blood,Username,remark,email,Gender,image) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
-
-            try (PreparedStatement preparedStatement = con.prepareStatement(insertQuery)) 
-            {
-                preparedStatement.setString(1, name);
-                preparedStatement.setString(2, spec);
-                preparedStatement.setInt(3, exp);
-                preparedStatement.setInt(4, phone);
-                preparedStatement.setString(5,  dob);
-                preparedStatement.setBoolean(6, avail);
-                preparedStatement.setString(7, pass);
-                preparedStatement.setLong(8, ad);
-                preparedStatement.setString(9, blood);
-                preparedStatement.setString(10, user);
-                preparedStatement.setString(11, remark);
-                preparedStatement.setString(12, email);
-                preparedStatement.setString(13, gen);
-                preparedStatement.setBinaryStream(14, input, (int) imageFile.length());
-                preparedStatement.executeUpdate();
-                
-            }
+                        String name=TName.getText();                                                            
+                        String spec =Tadd1.getText();                                                           
+                        Integer exp=Integer.parseInt(Tadd4.getText());                                        
+                        Integer phone=Integer.parseInt(TPhone.getText());                                     
+                        String dob=((JTextField)dateChooser.getDateEditor().getUiComponent()).getText();        
+                        boolean avail=true;                                                                     
+                        String pass=Tpasswd.getText();                                                          
+                        Long ad=Long.parseLong(Tadhaar.getText());                                              
+                        String blood=(String) C_Blood.getSelectedItem();                                        
+                        String user=Tusrname.getText();                                                         
+                        String remark=Tadd3.getText();
+                        String email=Tadd2.getText();
+                        String gen="";
+                        if(RMale.isSelected()){
+                            gen="Male";
+                        }
+                        else{
+                            gen="Female";
+                        }
+                        String insertQuery = "INSERT INTO Nurse(Name,Specialization,experience,PhoneNo,DOB,Availability,Password,AadhaarNo,Blood,Username,remark,email,Gender,image) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
             
-        }
-        catch (SQLException e) 
-        {
-           e.printStackTrace();
-            Lwarn.setText("*** Invalid Data Entered ***");
-            Lwarn.setForeground(Color.red);
-        }
-         Lwarn.setText("*** Registration Successfull ***");
-         Lwarn.setForeground(Color.green);
-         TName.setText("");
-         Tusrname.setText("");
-         Tadd3.setText("");
-         Tpasswd.setText("");
-         TPhone.setText("");
-         Tadd1.setText("");
-         Tadhaar.setText("");
-         Tadd2.setText("");
-         Tadd4.setText("");
-         
-        }           
+                        try (PreparedStatement preparedStatement = con.prepareStatement(insertQuery)) 
+                        {
+                            preparedStatement.setString(1, name);
+                            preparedStatement.setString(2, spec);
+                            preparedStatement.setInt(3, exp);
+                            preparedStatement.setInt(4, phone);
+                            preparedStatement.setString(5,  dob);
+                            preparedStatement.setBoolean(6, avail);
+                            preparedStatement.setString(7, pass);
+                            preparedStatement.setLong(8, ad);
+                            preparedStatement.setString(9, blood);
+                            preparedStatement.setString(10, user);
+                            preparedStatement.setString(11, remark);
+                            preparedStatement.setString(12, email);
+                            preparedStatement.setString(13, gen);
+                            preparedStatement.setBinaryStream(14, input, (int) imageFile.length());
+                            preparedStatement.executeUpdate();
+                        }
+                    }
+                    catch (SQLException e) 
+                    {
+                       e.printStackTrace();
+                        Lwarn.setText("*** Invalid Data Entered ***");
+                        Lwarn.setForeground(Color.red);
+                    }
+                     Lwarn.setText("*** Registration Successfull ***");
+                     Lwarn.setForeground(Color.green);
+                     TName.setText("");
+                     Tusrname.setText("");
+                     Tadd3.setText("");
+                     Tpasswd.setText("");
+                     TPhone.setText("");
+                     Tadd1.setText("");
+                     Tadhaar.setText("");
+                     Tadd2.setText("");
+                     Tadd4.setText("");
+                }           
                 else if (evt.getActionCommand()=="Patsubmit"){                                 
                      try {
+                        String name=TName.getText();
+                        
+                        Integer temp =Integer.parseInt(Tadd1.getText());
+                        Integer wght=Integer.parseInt(Tadd4.getText());
+                        Integer phone=Integer.parseInt(TPhone.getText());
+                        String dob=((JTextField)dateChooser.getDateEditor().getUiComponent()).getText();;
+                        boolean avail=true;
+                        String pass=Tpasswd.getText();
+                        Long ad=Long.parseLong(Tadhaar.getText());
+                        String blood=(String) C_Blood.getSelectedItem();
+                        String user=Tusrname.getText();
+                        String disease=Tadd3.getText();
+                        Integer hgt=Integer.parseInt(Tadd2.getText());
+                        String gen="";
+                        String dov=LocalDate.now().toString();
+                        if(RMale.isSelected()){
+                            gen="Male";
+                        }
+                        else{
+                            gen="Female";
+                        }
+                        String insertQuery = "INSERT INTO patient_OUT(OP_Name,temperature,height,Phone,DOB,weight,Password,Aadhaar_No,blood,Username,Gender,disease,DOV,image) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
             
-            String name=TName.getText();
-            
-            Integer temp =Integer.parseInt(Tadd1.getText());
-            Integer wght=Integer.parseInt(Tadd4.getText());
-            Integer phone=Integer.parseInt(TPhone.getText());
-            String dob=((JTextField)dateChooser.getDateEditor().getUiComponent()).getText();;
-            boolean avail=true;
-            String pass=Tpasswd.getText();
-            Long ad=Long.parseLong(Tadhaar.getText());
-            String blood=(String) C_Blood.getSelectedItem();
-            String user=Tusrname.getText();
-            String disease=Tadd3.getText();
-            Integer hgt=Integer.parseInt(Tadd2.getText());
-            String gen="";
-            String dov=LocalDate.now().toString();
-            if(RMale.isSelected()){
-                gen="Male";
-            }
-            else{
-                gen="Female";
-            }
-            String insertQuery = "INSERT INTO patient_OUT(OP_Name,temperature,height,Phone,DOB,weight,Password,Aadhaar_No,blood,Username,Gender,disease,DOV,image) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
-
-            try (PreparedStatement preparedStatement = con.prepareStatement(insertQuery)) 
-            {
-                preparedStatement.setString(1, name);
-                preparedStatement.setInt(2, temp);
-                preparedStatement.setInt(3, hgt);
-                preparedStatement.setInt(4, phone);
-                preparedStatement.setString(5,  dob);
-                preparedStatement.setInt(6, wght);
-                preparedStatement.setString(7, pass);
-                preparedStatement.setLong(8, ad);
-                preparedStatement.setString(9, blood);
-                preparedStatement.setString(10, user);
-                
-                preparedStatement.setString(11, gen);
-                 preparedStatement.setString(12, disease);
-                  preparedStatement.setString(13, dov);
-                  preparedStatement.setBinaryStream(14, input, (int) imageFile.length());
-                preparedStatement.executeUpdate();             
-            }     
-        }
-        catch (SQLException e) 
-        {
-           e.printStackTrace();
-            Lwarn.setText("*** Invalid Data Entered ***");
-            Lwarn.setForeground(Color.red);
-        }
+                        try {
+                            PreparedStatement preparedStatement = con.prepareStatement(insertQuery);
+                            preparedStatement.setString(1, name);
+                            preparedStatement.setInt(2, temp);
+                            preparedStatement.setInt(3, hgt);
+                            preparedStatement.setInt(4, phone);
+                            preparedStatement.setString(5,  dob);
+                            preparedStatement.setInt(6, wght);
+                            preparedStatement.setString(7, pass);
+                            preparedStatement.setLong(8, ad);
+                            preparedStatement.setString(9, blood);
+                            preparedStatement.setString(10, user);
+                            preparedStatement.setString(11, gen);
+                            preparedStatement.setString(12, disease);
+                            preparedStatement.setString(13, dov);
+                            preparedStatement.setBinaryStream(14, input, (int) imageFile.length());
+                            preparedStatement.executeUpdate();             
+                        }     
+                    }
+                    catch (SQLException e) 
+                    {
+                       e.printStackTrace();
+                        Lwarn.setText("*** Invalid Data Entered ***");
+                        Lwarn.setForeground(Color.red);
+                    }
                     Lwarn.setText("*** Registration Successfull ***");
                     Lwarn.setForeground(Color.green);
-            
-         }       
-          else{
-                    
+                } 
+                else{
+                    System.out.println("Something went Wrong");
                 }
-        }
-        else{
-             Lwarn.setText("*** Enter Valid Details ***");
-             Lwarn.setForeground(Color.red);   
-       }
+            }
+            else{
+                 Lwarn.setText("*** Enter Valid Details ***");
+                 Lwarn.setForeground(Color.red);   
+           }
         }
         else{
             Lwarn.setText("!!!!! Accept Terms And Conditions !!!!");
         }
-    }//GEN-LAST:event_submitsubmitActionPerformed
+    }
 
-    private void BedsubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BedsubmitActionPerformed
-        // TODO add your handling code here:
+    private void BedsubmitActionPerformed(java.awt.event.ActionEvent evt) {
         Integer canteen,pharm;
        if(Rcanty.isSelected()){
            canteen=1;
@@ -1483,7 +1452,8 @@ public class Registration extends javax.swing.JFrame {
        else{
            pharm =0;
        }
-       String query= "UPDATE `facility` SET `Bloodstock`='"+TbloodSt.getText()+"',`oxygen`='"+Toxy.getText()+"',`canteen`='"+canteen+"',`pharmacy`='"+pharm+"',`Ambulance`='"+Tamb.getText()+"',`Scanning`='"+Tscan.getText()+"',`Rooms`='"+Troom.getText()+"' ;";
+       String query= "UPDATE `facility` SET `Bloodstock`='"+TbloodSt.getText()+"',`oxygen`='"+Toxy.getText()
+           +"',`canteen`='"+canteen+"',`pharmacy`='"+pharm+"',`Ambulance`='"+Tamb.getText()+"',`Scanning`='"+Tscan.getText()+"',`Rooms`='"+Troom.getText()+"' ;";
        try {
 
             stmt = con.createStatement();
@@ -1497,17 +1467,12 @@ public class Registration extends javax.swing.JFrame {
                   System.out.println("Unsuccessfull");
             }
        }
-        
         catch(Exception ex){
             ex.printStackTrace();
         }
-    }//GEN-LAST:event_BedsubmitActionPerformed
+    }
 
-    private void TscanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TscanActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TscanActionPerformed
-
-    private void BmyProfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BmyProfileActionPerformed
+    private void BmyProfileActionPerformed(java.awt.event.ActionEvent evt) {
         PHome.setSelectedIndex(4);
         PRegPane4.setBounds(390, 90, 1090, 680);
         PRegPane4.setVisible(true);
@@ -1515,8 +1480,7 @@ public class Registration extends javax.swing.JFrame {
         try {
 
             stmt = con.createStatement();
-             ResultSet rs = stmt.executeQuery(query);
-         //    System.out.print(rs.getString("Name"));
+            ResultSet rs = stmt.executeQuery(query);
             if(rs.first()){
                 TName1.setText(rs.getString("Name"));
                 Tdate1.setText(rs.getDate("DOB").toString());
@@ -1537,9 +1501,9 @@ public class Registration extends javax.swing.JFrame {
         catch(Exception ex){
             ex.printStackTrace();
         }
-    }//GEN-LAST:event_BmyProfileActionPerformed
+    }
 
-    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {
         int x=JOptionPane.showConfirmDialog(null,"Do you Want to Exit ?","Confirmation",JOptionPane.YES_NO_OPTION);
         if(x==0){
             System.exit(0);
@@ -1552,18 +1516,9 @@ public class Registration extends javax.swing.JFrame {
             }
             
          }
-    }//GEN-LAST:event_formWindowClosing
-
-    private void TroomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TroomActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TroomActionPerformed
-
-    private void RpharmNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RpharmNActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_RpharmNActionPerformed
-
-    private void BeditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BeditActionPerformed
-        // TODO add your handling code here:
+    }
+    
+    private void BeditActionPerformed(java.awt.event.ActionEvent evt) {
         System.out.println(evt.getActionCommand());
         if(evt.getActionCommand()=="editDoc" && Lsearchwarn.getText()!="!!! Not Found !!!!"){
             PHome.setSelectedIndex(4);
@@ -1593,7 +1548,6 @@ public class Registration extends javax.swing.JFrame {
                     Texp.setText(Integer.valueOf(rs.getInt("experience")).toString());
                 }
             }
-
             catch(Exception ex){
                 ex.printStackTrace();
             }
@@ -1675,15 +1629,13 @@ public class Registration extends javax.swing.JFrame {
                     Texp.setText(Integer.valueOf(rs.getInt("temperature")).toString());
                 }
             }
-
             catch(Exception ex){
                 ex.printStackTrace();
             }
-
         }
-    }//GEN-LAST:event_BeditActionPerformed
+    }
 
-    private void BsearchIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BsearchIdActionPerformed
+    private void BsearchIdActionPerformed(java.awt.event.ActionEvent evt) {
         BsearchId.setMnemonic('S');
 
         if(evt.getActionCommand()=="searchDoc"){
@@ -1761,14 +1713,9 @@ public class Registration extends javax.swing.JFrame {
             }
 
         }
-    }//GEN-LAST:event_BsearchIdActionPerformed
-
-    private void Tdate1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tdate1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Tdate1ActionPerformed
-
-    private void BdeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BdeleteActionPerformed
-        // TODO add your handling code here:
+    }
+    
+    private void BdeleteActionPerformed(java.awt.event.ActionEvent evt) {
           if(evt.getActionCommand()=="delDoc" && Lsearchwarn.getText()!="!!! Not Found !!!!")
           {
                String query="DELETE FROM `doctor` WHERE Name= '"+TsearchId1.getText()+"';";
@@ -1845,17 +1792,9 @@ public class Registration extends javax.swing.JFrame {
                     
                 }          
           }     
-    }//GEN-LAST:event_BdeleteActionPerformed
+    }
 
-    private void TremarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TremarkActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TremarkActionPerformed
-
-    private void RFemaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RFemaleActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_RFemaleActionPerformed
-
-    private void BupImgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BupImgActionPerformed
+    private void BupImgActionPerformed(java.awt.event.ActionEvent evt) {
          JFileChooser fileChooser = new JFileChooser();
          BupImg.setActionCommand("unsuccess");
         int returnValue = fileChooser.showOpenDialog(null);
@@ -1881,10 +1820,8 @@ public class Registration extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Image SiZe too Large", "Upload Image", JOptionPane.WARNING_MESSAGE);
                 }
         }       
-    }//GEN-LAST:event_BupImgActionPerformed
-
-    private void BupImg2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BupImg2ActionPerformed
-        // TODO add your handling code here:
+    }
+    private void BupImg2ActionPerformed(java.awt.event.ActionEvent evt) {
         JFileChooser fileChooser = new JFileChooser();
         BupImg.setActionCommand("unsuccess");
         int returnValue = fileChooser.showOpenDialog(null);
@@ -1892,31 +1829,26 @@ public class Registration extends javax.swing.JFrame {
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();
             imageFile=new File(selectedFile.getPath());
-        if(imageFile.length()< 1048576){    
-        try {
-            input=new FileInputStream(imageFile);
-            ImageIcon imageIcon = new ImageIcon(selectedFile.getAbsolutePath());
-            Image image = imageIcon.getImage().getScaledInstance(Limage.getWidth(), Limage.getHeight(), Image.SCALE_DEFAULT);    
-            Limage1.setIcon(new ImageIcon(image));
-            Limage1.setVisible(true); 
-            BupImg.setActionCommand("success");
-        }
-        catch(Exception ex)
+            if(imageFile.length()< 1048576){    
+                try {
+                    input=new FileInputStream(imageFile);
+                    ImageIcon imageIcon = new ImageIcon(selectedFile.getAbsolutePath());
+                    Image image = imageIcon.getImage().getScaledInstance(Limage.getWidth(), Limage.getHeight(), Image.SCALE_DEFAULT);    
+                    Limage1.setIcon(new ImageIcon(image));
+                    Limage1.setVisible(true); 
+                    BupImg.setActionCommand("success");
+                }
+                catch(Exception ex)
                 {
                     ex.printStackTrace();
                 }
+            }
+             else{
+                JOptionPane.showMessageDialog(null, "Image SiZe too Large", "Upload Image", JOptionPane.WARNING_MESSAGE);
+            }
         }
-         else{
-                    JOptionPane.showMessageDialog(null, "Image SiZe too Large", "Upload Image", JOptionPane.WARNING_MESSAGE);
-                }
-        }
-        
-    }//GEN-LAST:event_BupImg2ActionPerformed
-
-    private void BupdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BupdateActionPerformed
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_BupdateActionPerformed
+    }
+    
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -1933,9 +1865,9 @@ public class Registration extends javax.swing.JFrame {
         u.setExtendedState(JFrame.MAXIMIZED_BOTH);
         u.setVisible(true);
     }
+    
     Connection con;
     java.sql.Statement stmt;
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup BGcanteen;
     private javax.swing.ButtonGroup BGpharm;
     private javax.swing.JButton B_Logout;
@@ -2051,5 +1983,5 @@ public class Registration extends javax.swing.JFrame {
     private javax.swing.JButton submit;
     private javax.swing.JCheckBox terms;
     private javax.swing.JLabel title;
-    // End of variables declaration//GEN-END:variables
+
 }
