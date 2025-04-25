@@ -1,16 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package hospitalmanagementsystem;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Gopisaran
- */
 public class HospitalManagementSystem {
     public static void main(String[] args) {
         try {
